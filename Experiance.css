@@ -37,7 +37,7 @@ header{
     margin-top: 10px;
 }
 #img3{
-    height:30vh ;
+    height:20vh ;
     border-radius: 20px;
     box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
@@ -113,7 +113,7 @@ main{
 }
 @media screen and (max-width:900px){
     #img3{
-        height: 40vh;
+        height: 30vh;
     }
     .h1{
         font-size: 20px;
