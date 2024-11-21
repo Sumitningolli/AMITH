@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: beige;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.nameH{
+    color: white;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-image: url(image/alex-knight-Ys-DBJeX0nE-unsplash.jpg);
+    padding: 2rem;
+    background-size: cover;
+   
+}
+/* header{
+    background-color:rgb(15, 15, 66);
+    height: 80px;
+} */
+.header-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: beige;
+}
+@media screen and (max-width:500px){
+    .logo{
+        font-size:28px;
+        transition: 0.5s;
+    }
+}
+
+.nav{
+    display: none;
+    gap: 5rem;
+    margin-left: 100px;
+}
+@media screen and (min-width:860px){
+    .nav{
+    display: flex;
+    }
+}
+.nav-link{
+    background-color: rgb(9, 20, 83);
+    color: beige;
+    padding: 25px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
+
+}
+.nav-link:hover{
+    background-color: red;
+    transition: 0.2s;
+}
+.contact-button{
+    display: none;
+    border: none;
+    background-color: blue;
+   border-radius: 10px;
+    color: beige;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px;
+    box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+}
+@media screen and (min-width:860px) {
+    .contact-button{
+        display: block;
+    }
+}
+.contact-button:hover{
+    background-color: #5254f8;
+    box-shadow: 10px 5px 5px black;
+}
+/* .content1{
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+.menu-btn{
+    font-size: 25px;
+   
+    padding: 6px;
+    
+    display: none;
+}
+select{
+    display: none;
+}
+.fa-bars{
+   color: black;
+
+}
+
+@media screen and (max-width:860px){
+    .menu-btn{
+        display: block;
+        font-size: 20px;
+        background-color: white;
+        padding: 6px;
+       
+    }
+}
+#menu-bttn {
+    background-color: #0a0b52;
+    padding: 8px 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures dropdown aligns correctly */
+    gap: 1rem;
+    border-radius: 20px;
+    position: relative; /* Allows ul to position relative to menu-bttn */
+    display: none;
+    box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+ul {
+    list-style: none;
+    display: none; /* Hidden by default */
+    position: absolute; /* Positions dropdown relative to parent */
+    top: 100%; /* Places it below the menu button */
+    left: 0;
+    background-color: #0a0b52;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+#menu-bttn:hover ul {
+    display: block; /* Shows the dropdown on hover */
+}
+
+ul li {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: beige;
+    border-radius: 10px;
+}
+
+ul li:hover {
+    background-color: #5254f8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.main-section{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    align-items: center;
+}
+.content1-left{
+    text-align: center;
+    animation: slideFromLeft 2s ease forwards;
+    opacity: 0;
+    
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity:0;
+         transform: translate(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+.nameH{
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.nameA{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.about{
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 900px;
+}
+.DCV{
+    gap: 2rem;
+    margin-top: 20px;
+}
+.dcv{
+    background-color: rgb(0, 1, 12);
+    font-size: 1rem;
+    font-weight: bold;
+    color: beige;
+    border-radius: 20px;
+    padding: 10px;
+   
+  
+}
+.dcv:hover{
+    background-color: rgb(0, 4, 245);
+    box-shadow: 10px 5px 5px black;
+}
+.content1-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1{
+    border-radius: 20px;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 8px rgba(0,0,0,0.1); */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow:  1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+@media screen and (min-width:768px){
+    .main-section{
+        flex-direction: row;
+    }
+    .content1-left{
+        width: 50%;
+       
+    }
+    .content1-right{
+        width: 50%;
+    }
+    .img1{
+        height: 70vh;
+      
+    }
+    .dcv{
+        margin-top: 40px;
+        font-size: 20px;
+        padding: 15px;
+    }
+   
+}
+@media screen and (max-width:860px){
+    #menu-bttn{
+        display: block;
+    }
+}
